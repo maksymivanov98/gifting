@@ -44,7 +44,6 @@ trigger CreateTaskOnStatusChange on Gift_History__c (after update) {
             
             system.debug('taskList** '+taskList);
             if(taskList !=null && !taskList.isEmpty()){
-                //test
                 insert taskList ;
             }
             
